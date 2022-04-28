@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width, height=device-height, 
+                     minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+    <title>test</title>
+    
+    <style>
+
+
+    #wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+    div.under{
+        position: relative;
+        margin-top: 33%;
+    }
+    button {
+        position: 'absolute';
+    }
+    div.under{
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -80%);
+    }
+    div.left {
+        width: 45%;
+        float: left;
+        box-sizing: border-box;
+        border: 1px solid #111;
+        background: #E6E6E6;
+    }
+    div.right {
+        width: 45%;
+        float: right;
+        box-sizing: border-box;
+        border: 1px solid #111;
+        background: #E6E6E6;
+    }
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-zv4m{border-color:#ffffff;text-align:left;vertical-align:top}
+    .tg .tg-8jgo{border-color:#ffffff;text-align:center;vertical-align:top}
+    </style>
+</head>
+ 
+<body>
+    <br>
+    <center><h1> K-MoCA / K-MMSE 세부항목 입력 </h1><center>
+    <br>
+    <div id = "wrapper">
+        <div class="left">
+            <br>
+            <h3><U> K-MoCA 결과 입력 </U></h3>
+            <table class="tg" style="width: 90%">
+                <colgroup>
+                <col style="width: 184px">
+                <col style="width: 488px">
+                <col style="width: 203px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="tg-8jgo">영역</th>
+                    <th class="tg-8jgo">문항</th>
+                    <th class="tg-8jgo">점수</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="5">시공간/<br>집행기능</td>
+                    <td class="tg-zv4m">1가2나3다</td>
+                    <td class="tg-8jgo"><input type="radio" name="score1"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score1"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">육면체 그리기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score2"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score2"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">시계 그리기 (윤곽)</td>
+                    <td class="tg-8jgo"><input type="radio" name="score3"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score3"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">시계 그리기 (숫자)</td>
+                    <td class="tg-8jgo"><input type="radio" name="score4"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score4"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">시계 그리기 (바늘)</td>
+                    <td class="tg-8jgo"><input type="radio" name="score5"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score5"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="3">이름대기</td>
+                    <td class="tg-zv4m">사자</td>
+                    <td class="tg-8jgo"><input type="radio" name="score6"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score6"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">박쥐</td>
+                    <td class="tg-8jgo"><input type="radio" name="score7"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score7"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">낙타</td>
+                    <td class="tg-8jgo"><input type="radio" name="score8"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score8"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="4">주의력</td>
+                    <td class="tg-zv4m">순서대로 따라 외우기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score9"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score9"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">거꾸로 따라 외우기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score10"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score10"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">요일 손벽치기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score11"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score11"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">100-7-7-7-7</td>
+                    <td class="tg-8jgo"><input type="radio" name="score12"/><label for="0">0  </label><input type="radio" name="score12"/>1  <input type="radio" name="score12"/>2  <input type="radio" name="score12"/>3</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="4">언어</td>
+                    <td class="tg-zv4m">칼날같이 날카로운 바위</td>
+                    <td class="tg-8jgo"><input type="radio" name="score13"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score13"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">스물 일곱 ... 냉장고에 있다</td>
+                    <td class="tg-8jgo"><input type="radio" name="score14"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score14"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">"ㄱ"으로 시작되는 단어</td>
+                    <td class="tg-8jgo"><input type="radio" name="score15"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score15"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">단어 갯수</td>
+                    <td class="tg-8jgo"><input type="text" name="score16" value="" size="1"> 개</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="2">추상력</td>
+                    <td class="tg-zv4m">기차-비행기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score17"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score17"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">시계-저울</td>
+                    <td class="tg-8jgo"><input type="radio" name="score18"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score18"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="5">지연회상</td>
+                    <td class="tg-zv4m">얼굴</td>
+                    <td class="tg-8jgo"><input type="radio" name="score19"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score19"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">비단</td>
+                    <td class="tg-8jgo"><input type="radio" name="score20"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score20"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">학교</td>
+                    <td class="tg-8jgo"><input type="radio" name="score21"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score21"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">피리</td>
+                    <td class="tg-8jgo"><input type="radio" name="score22"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score22"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">노랑</td>
+                    <td class="tg-8jgo"><input type="radio" name="score23"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score23"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="6">지남력</td>
+                    <td class="tg-zv4m">일</td>
+                    <td class="tg-8jgo"><input type="radio" name="score24"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score24"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">월</td>
+                    <td class="tg-8jgo"><input type="radio" name="score25"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score25"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">년</td>
+                    <td class="tg-8jgo"><input type="radio" name="score26"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score26"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">요일</td>
+                    <td class="tg-8jgo"><input type="radio" name="score27"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score27"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">장소</td>
+                    <td class="tg-8jgo"><input type="radio" name="score28"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score28"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">도시 이름</td>
+                    <td class="tg-8jgo"><input type="radio" name="score29"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score29"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo">K-MoCA 총점</td>
+                    <td class="tg-zv4m"></td>
+                    <td class="tg-8jgo">자동계산</td>
+                  </tr>
+                </tbody>
+                </table>
+                <br><br>
+        </div>
+        <div class="right">
+            <br>
+            <h3><U> K-MMSE 결과 입력 </U></h3>
+            <table class="tg" style="width: 90%">
+                <colgroup>
+                <col style="width: 184px">
+                <col style="width: 488px">
+                <col style="width: 203px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="tg-8jgo">영역</th>
+                    <th class="tg-8jgo">문항</th>
+                    <th class="tg-8jgo">점수</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="5">시간 지남력</td>
+                    <td class="tg-zv4m">년</td>
+                    <td class="tg-8jgo"><input type="radio" name="score30"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score30"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">월</td>
+                    <td class="tg-8jgo"><input type="radio" name="score31"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score31"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">일</td>
+                    <td class="tg-8jgo"><input type="radio" name="score32"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score32"/>1</div></td>
+                  <tr>
+                    <td class="tg-zv4m">요일</td>
+                    <td class="tg-8jgo"><input type="radio" name="score33"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score33"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">계절</td>
+                    <td class="tg-8jgo"><input type="radio" name="score34"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score34"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="5">장소 지남력</td>
+                    <td class="tg-zv4m">나라</td>
+                    <td class="tg-8jgo"><input type="radio" name="score35"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score35"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">시/도</td>
+                    <td class="tg-8jgo"><input type="radio" name="score36"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score36"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">무엇하는 곳</td>
+                    <td class="tg-8jgo"><input type="radio" name="score37"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score37"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">현재 장소명</td>
+                    <td class="tg-8jgo"><input type="radio" name="score38"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score38"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">몇 층</td>
+                    <td class="tg-8jgo"><input type="radio" name="score39"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score39"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="3">기억 등록</td>
+                    <td class="tg-zv4m">비행기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score40"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score40"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">연필</td>
+                    <td class="tg-8jgo"><input type="radio" name="score41"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score41"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">소나무</td>
+                    <td class="tg-8jgo"><input type="radio" name="score42"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score42"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="5">주의집중 및 계산</td>
+                    <td class="tg-zv4m">100-7</td>
+                    <td class="tg-8jgo"><input type="radio" name="score43"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score43"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">-7</td>
+                    <td class="tg-8jgo"><input type="radio" name="score44"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score44"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">-7</td>
+                    <td class="tg-8jgo"><input type="radio" name="score45"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score45"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">-7</td>
+                    <td class="tg-8jgo"><input type="radio" name="score46"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score46"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">-7</td>
+                    <td class="tg-8jgo"><input type="radio" name="score47"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score47"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="3">기억 회상</td>
+                    <td class="tg-zv4m">비행기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score48"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score48"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">연필</td>
+                    <td class="tg-8jgo"><input type="radio" name="score49"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score49"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">소나무</td>
+                    <td class="tg-8jgo"><input type="radio" name="score50"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score50"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="2">이름대기</td>
+                    <td class="tg-zv4m">시계</td>
+                    <td class="tg-8jgo"><input type="radio" name="score51"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score51"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">볼펜</td>
+                    <td class="tg-8jgo"><input type="radio" name="score52"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score52"/>1</div></td>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="3">이해</td>
+                    <td class="tg-zv4m">종이를 뒤집고</td>
+                    <td class="tg-8jgo"><input type="radio" name="score53"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score53"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">반으로 접어서</td>
+                    <td class="tg-8jgo"><input type="radio" name="score54"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score54"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">저에게 주세요</td>
+                    <td class="tg-8jgo"><input type="radio" name="score55"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score55"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="3">언어 공통</td>
+                    <td class="tg-zv4m">백문이 불여일견</td>
+                    <td class="tg-8jgo"><input type="radio" name="score56"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score56"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">읽기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score57"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score57"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-zv4m">쓰기</td>
+                    <td class="tg-8jgo"><input type="radio" name="score58"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score58"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo" rowspan="1">그리기</td>
+                    <td class="tg-zv4m">오각형</td>
+                    <td class="tg-8jgo"><input type="radio" name="score59"/><label for="0">0</label>&emsp;&emsp;<input type="radio" name="score59"/>1</div></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-8jgo">K-MoCA 총점</td>
+                    <td class="tg-zv4m"></td>
+                    <td class="tg-8jgo">자동계산</td>
+                  </tr>
+                </tbody>
+                </table>
+        </div>
+    </div>
+        <div class="under">
+            <button style="background-color:#0B2161;" type="submit" name="submit"><p style="color: #FFFFFF; font-size:15px;"><B>인지장애 판별(기계 학습)</B></p></button>
+    </div>
+</body>
+</html>
